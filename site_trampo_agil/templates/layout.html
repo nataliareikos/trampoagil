@@ -13,8 +13,10 @@
 </head>
 <body>
     <div class="grid">
+
         <header>
             <div class="container">
+                    {% block header %}
                 <nav>
                     <a href="/">
                         <h1 class="logo">Trampo<span>Ágil</span></h1>
@@ -37,6 +39,7 @@
                         </li>
                     </ul>
                 </nav>
+                    {% endblock %}
             </div>
             <div class="header-opacity">
                 <div class="header-img"></div>
