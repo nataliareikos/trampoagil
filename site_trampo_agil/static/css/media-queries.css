@@ -21,3 +21,8 @@
         max-width: 1200px;
     }
 }
+
+/* Breakpoint for iPhone */
+@media(min-width: 375px) {
+    
+}

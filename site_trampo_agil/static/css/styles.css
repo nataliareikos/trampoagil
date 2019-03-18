@@ -109,7 +109,6 @@ nav ul li a:active {
     align-items: center;
     background-image: url("../img/bullet-journal.jpg");
     background-attachment: fixed;
-    ;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -160,14 +159,15 @@ footer > div.container {
     justify-content: center;
     font-family: 'Maven Pro', sans-serif;
     font-size: 18px;
-    color:#f7ce28;
+    color:darkgoldenrod;
     line-height: 1.2;
 }
+/* Footer styles */
 
-
+/* login styles */
 .container-login100 {
-        width: 100%;
-        min-height: 100vh;
+        width: 100vw;
+        min-height: 80vh;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -180,13 +180,18 @@ footer > div.container {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-color: darkgoldenrod;
 }
 
 .wrap-login100 {
-    width: 390px;
     background: #fff;
+    background-color: lightgray;
     border-radius: 10px;
+    border: 1px solid black;
+    height: 50vh;
+    margin: 10px;
     position: relative;
+    width: 490px;
 }
 
 .p-b-90 {
@@ -198,14 +203,11 @@ footer > div.container {
 }
 
 Button {
-
   display: flex;
   justify-content: center;
   overflow: visible;
   flex: start;
   margin: 0 auto;
-  
-
 }
 
 h2{
@@ -213,9 +215,14 @@ h2{
     display: flex;
     justify-content: center;
     height: 10px;
-  
+  }
 
-}
+h1{
+    font-family: 'Maven Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 10px;
+  }
 
 input:focus {
     background:#CCC;  
@@ -223,8 +230,25 @@ input:focus {
     -moz-transition: 0.5s ease-in;
     -o-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
-   
 } 
 
+.formulariologin input{
+    border-radius: 10px;
+    border: none;
+}
 
+.formulariologin p{
+    margin: 60px;
+    font-size: 20pt;
+}
 
+button{
+    background-color: darkgray;
+    border: none;
+    border-radius: 10px;
+    font-size: 15pt;
+    height: 50px;
+    width: 110px;
+}
+
+/* login styles */

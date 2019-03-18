@@ -26,8 +26,17 @@ def render_login_candidatos(request):
     return render(request, 'login_candidatos.html', context)
     
 def render_login_empresas(request):
-    return render(request, 'login_empresas.html')
+    formulario = LoginCriarForm(request.POST or None)
 
+    if formulario.is_valid():
+        formulario.save()
+        formulario = LoginCriarForm()
+
+    context = {
+        'form': formulario
+    }
+    return render(request, 'login_empresas.html', context)
+    
 def render_mural_vagas(request):
     return render(request, 'mural_vagas.html')
 

@@ -31,7 +31,7 @@ class LoginCandidatos(models.Model):
   
     email = models.EmailField()
     senha = models.CharField(max_length=40)
- 
+
 def __str__(self):
        return self.email
 
